@@ -1,0 +1,24 @@
+# permissions for end users to edit firmwares.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: firmware-editor-role
+rules:
+- apiGroups:
+  - octeon.my.domain
+  resources:
+  - firmwares
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - octeon.my.domain
+  resources:
+  - firmwares/status
+  verbs:
+  - get

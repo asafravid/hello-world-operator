@@ -1,0 +1,33 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - octeon.my.domain
+  resources:
+  - firmwares
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - octeon.my.domain
+  resources:
+  - firmwares/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - octeon.my.domain
+  resources:
+  - firmwares/status
+  verbs:
+  - get
+  - patch
+  - update

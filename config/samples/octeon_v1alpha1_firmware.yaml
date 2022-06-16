@@ -1,0 +1,6 @@
+apiVersion: octeon.my.domain/v1alpha1
+kind: Firmware
+metadata:
+  name: firmware-sample
+spec:
+  # TODO(user): Add fields here
