@@ -1,0 +1,1 @@
+This is my attempt to understand how kubernetes operators work. 
