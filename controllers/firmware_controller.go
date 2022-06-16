@@ -18,6 +18,7 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -50,6 +51,15 @@ func (r *FirmwareReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 	_ = log.FromContext(ctx)
 
 	// TODO(user): your logic here
+	fw := &octeonv1alpha1.Firmware{}
+
+	err := r.Get(ctx, req.NamespacedName, fw)
+
+	if err != nil {
+
+	}
+
+	fmt.Println("Location updated to:", fw.Spec.Location)
 
 	return ctrl.Result{}, nil
 }

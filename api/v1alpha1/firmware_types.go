@@ -29,7 +29,7 @@ type FirmwareSpec struct {
 	// Important: Run "make" to regenerate code after modifying this file
 
 	// Foo is an example field of Firmware. Edit firmware_types.go to remove/update
-	Foo string `json:"foo,omitempty"`
+	Location string `json:"location,omitempty"`
 }
 
 // FirmwareStatus defines the observed state of Firmware

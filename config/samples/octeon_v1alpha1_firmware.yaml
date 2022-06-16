@@ -3,4 +3,5 @@ kind: Firmware
 metadata:
   name: firmware-sample
 spec:
-  # TODO(user): Add fields here
+  location: test3
+  version: 1
