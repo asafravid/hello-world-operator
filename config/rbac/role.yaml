@@ -6,7 +6,7 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
-  - octeon.my.domain
+  - octeon.marvell.com
   resources:
   - firmwares
   verbs:
@@ -18,13 +18,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - octeon.my.domain
+  - octeon.marvell.com
   resources:
   - firmwares/finalizers
   verbs:
   - update
 - apiGroups:
-  - octeon.my.domain
+  - octeon.marvell.com
   resources:
   - firmwares/status
   verbs:

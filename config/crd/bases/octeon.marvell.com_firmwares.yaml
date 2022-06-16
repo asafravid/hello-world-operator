@@ -5,9 +5,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.8.0
   creationTimestamp: null
-  name: firmwares.octeon.my.domain
+  name: firmwares.octeon.marvell.com
 spec:
-  group: octeon.my.domain
+  group: octeon.marvell.com
   names:
     kind: Firmware
     listKind: FirmwareList

@@ -34,9 +34,9 @@ type FirmwareReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=octeon.my.domain,resources=firmwares,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=octeon.my.domain,resources=firmwares/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=octeon.my.domain,resources=firmwares/finalizers,verbs=update
+//+kubebuilder:rbac:groups=octeon.marvell.com,resources=firmwares,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=octeon.marvell.com,resources=firmwares/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=octeon.marvell.com,resources=firmwares/finalizers,verbs=update
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to
 // move the current state of the cluster closer to the desired state.

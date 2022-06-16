@@ -8,4 +8,4 @@ webhook:
   port: 9443
 leaderElection:
   leaderElect: true
-  resourceName: 3be13e8a.my.domain
+  resourceName: 3be13e8a.marvell.com

@@ -1,4 +1,4 @@
-apiVersion: octeon.my.domain/v1alpha1
+apiVersion: octeon.marvell.com/v1alpha1
 kind: Firmware
 metadata:
   name: firmware-sample
