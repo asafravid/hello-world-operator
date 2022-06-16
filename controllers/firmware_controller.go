@@ -50,7 +50,6 @@ type FirmwareReconciler struct {
 func (r *FirmwareReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	_ = log.FromContext(ctx)
 
-	// TODO(user): your logic here
 	fw := &octeonv1alpha1.Firmware{}
 
 	err := r.Get(ctx, req.NamespacedName, fw)

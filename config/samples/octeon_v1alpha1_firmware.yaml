@@ -3,5 +3,4 @@ kind: Firmware
 metadata:
   name: firmware-sample
 spec:
-  location: test3
-  version: 1
+  location: test1

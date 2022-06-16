@@ -1,4 +1,4 @@
-domain: my.domain
+domain: marvell.com
 layout:
 - go.kubebuilder.io/v3
 plugins:
@@ -11,7 +11,7 @@ resources:
     crdVersion: v1
     namespaced: true
   controller: true
-  domain: my.domain
+  domain: marvell.com
   group: octeon
   kind: Firmware
   path: marvell.com/m/v2/api/v1alpha1

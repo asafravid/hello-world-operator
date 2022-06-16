@@ -28,7 +28,6 @@ type FirmwareSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-	// Foo is an example field of Firmware. Edit firmware_types.go to remove/update
 	Location string `json:"location,omitempty"`
 }
 

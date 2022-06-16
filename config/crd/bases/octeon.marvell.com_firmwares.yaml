@@ -36,8 +36,6 @@ spec:
             description: FirmwareSpec defines the desired state of Firmware
             properties:
               location:
-                description: Foo is an example field of Firmware. Edit firmware_types.go
-                  to remove/update
                 type: string
             type: object
           status:
