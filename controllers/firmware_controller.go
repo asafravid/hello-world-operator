@@ -55,16 +55,17 @@ func (r *FirmwareReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 	err := r.Get(ctx, req.NamespacedName, fw)
 
 	if err != nil {
-
+		fmt.Println("Error:", err)
 	}
 
-	fmt.Println("Location updated to:", fw.Spec.Location)
+	fmt.Println("[Reconcile] Location updated to:", fw.Spec.Location)
 
 	return ctrl.Result{}, nil
 }
 
 // SetupWithManager sets up the controller with the Manager.
 func (r *FirmwareReconciler) SetupWithManager(mgr ctrl.Manager) error {
+	fmt.Println("[SetupWithManager]")
 	return ctrl.NewControllerManagedBy(mgr).
 		For(&octeonv1alpha1.Firmware{}).
 		Complete(r)
