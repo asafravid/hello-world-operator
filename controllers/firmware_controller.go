@@ -60,6 +60,9 @@ func (r *FirmwareReconciler) Reconcile(ctx context.Context, req ctrl.Request) (c
 
 	fmt.Println("[Reconcile] Location updated to:", fw.Spec.Location)
 
+        // TODO: ASAFR: update daemons (on nodes, how to create them) with changed state
+        //              and read their status?
+
 	return ctrl.Result{}, nil
 }
 
